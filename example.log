@@ -1,0 +1,1478 @@
+DEBUG main JavaSIP - BUILD TIMESTAMP = null
+DEBUG main JavaSIP - Config Propeties = {}{gov.nist.javax.sip.SERVER_LOG=java-sip.txt, gov.nist.javax.sip.TRACE_LEVEL=32, javax.sip.STACK_NAME=JavaSIP, gov.nist.javax.sip.DEBUG_LOG=java-sip-debug.log}
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:236) [Here are the stack configuration properties 
+{}{gov.nist.javax.sip.SERVER_LOG=java-sip.txt, gov.nist.javax.sip.TRACE_LEVEL=32, javax.sip.STACK_NAME=JavaSIP, gov.nist.javax.sip.DEBUG_LOG=java-sip-debug.log}
+]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:238) [ ]]>]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:239) [</debug>]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:240) [<description
+ logDescription="JavaSIP"
+ name="null" />
+]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:242) [<debug>]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:243) [<![CDATA[ ]
+INFO main JavaSIP - value -1000 will be used for reliableConnectionKeepAliveTimeout stack property
+INFO main JavaSIP - Setting Stack Thread priority to 10
+WARN main JavaSIP - using default tls security policy
+WARN main JavaSIP - Using default keystore type pkcs12
+WARN main JavaSIP - TLS server settings will be inactive - TLS key store will use JVM defaults keyStoreType=pkcs12 javax.net.ssl.keyStore=null javax.net.ssl.keyStorePassword=null
+INFO main JavaSIP - javax.net.ssl.trustStorePassword is null, using the password passed through javax.net.ssl.keyStorePassword
+WARN main JavaSIP - Using default truststore type pkcs12
+WARN main JavaSIP - TLS trust settings will be inactive - TLS trust store will use JVM defaults. trustStoreType=pkcs12 javax.net.ssl.trustStore=null javax.net.ssl.trustStorePassword=null
+DEBUG main JavaSIP - gov.nist.core.net.DefaultSecurityManagerProvider.init(DefaultSecurityManagerProvider.java:82) [SecurityManagerProvider gov.nist.core.net.DefaultSecurityManagerProvider will use algorithm SunX509]
+DEBUG main JavaSIP - gov.nist.core.net.DefaultSecurityManagerProvider.init(DefaultSecurityManagerProvider.java:105) [TLS settings OK. SecurityManagerProvider gov.nist.core.net.DefaultSecurityManagerProvider initialized.]
+DEBUG main JavaSIP - gov.nist.javax.sip.SipStackImpl.<init>(SipStackImpl.java:1431) [created Sip stack. Properties = {}{gov.nist.javax.sip.SERVER_LOG=java-sip.txt, gov.nist.javax.sip.TRACE_LEVEL=32, javax.sip.STACK_NAME=JavaSIP, gov.nist.javax.sip.DEBUG_LOG=java-sip-debug.log}]
+INFO main JavaSIP - the sip stack timer gov.nist.javax.sip.stack.timers.DefaultSipTimer has been started
+DEBUG main JavaSIP - gov.nist.javax.sip.SipStackImpl.createListeningPoint(SipStackImpl.java:1621) [createListeningPoint : address = 192.168.1.2 port = 5070 transport = udp]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.UDPMessageProcessor.<init>(UDPMessageProcessor.java:132) [Max Message size is 65536]
+DEBUG main JavaSIP - gov.nist.javax.sip.SipStackImpl.createListeningPoint(SipStackImpl.java:1659) [Created Message Processor: 192.168.1.2 port = 5070 transport = udp]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.MessageProcessor.setListeningPoint(MessageProcessor.java:203) [setListeningPointgov.nist.javax.sip.stack.UDPMessageProcessor@6591f517 listeningPoint = gov.nist.javax.sip.ListeningPointImpl@345965f2]
+DEBUG main JavaSIP - gov.nist.javax.sip.SipStackImpl.createSipProvider(SipStackImpl.java:1691) [createSipProvider: gov.nist.javax.sip.ListeningPointImpl@345965f2]
+DEBUG main JavaSIP - gov.nist.javax.sip.SipProviderImpl.addSipListener(SipProviderImpl.java:226) [add SipListener ru.ptkom.sip.SipCaller@4f9a3314]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.DefaultRouter.getNextHop(DefaultRouter.java:244) [Used request-URI for nextHop = 85.95.138.7:5060/udp]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.<init>(UDPMessageChannel.java:264) [Creating message channel 85.95.138.7/5060]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.sendMessage(UDPMessageChannel.java:829) [sendMessage 85.95.138.7/5060
+messageSize =  590 message = INVITE sip:228@85.95.138.7:5060;transport=udp SIP/2.0
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+CSeq: 1 INVITE
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Max-Forwards: 70
+Contact: "BARGUZIN" <sip:173@192.168.1.2:5070>
+Allow: INVITE, ACK, CANCEL, MESSAGE, NOTIFY, OPTIONS, REFER, UPDATE, PARK
+Supported: replaces, from-change, 100rel
+User-Agent: JavaSIP
+Content-Type: application/sdp
+Content-Length: 0
+
+]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.sendMessage(UDPMessageChannel.java:833) [*******************
+]
+INFO main JavaSIP - <message
+from="192.168.1.2:5070" 
+to="85.95.138.7:5060" 
+time="1694166073205"
+isSender="true" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="INVITE sip:228@85.95.138.7:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[INVITE sip:228@85.95.138.7:5060;transport=udp SIP/2.0
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+CSeq: 1 INVITE
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Max-Forwards: 70
+Contact: "BARGUZIN" <sip:173@192.168.1.2:5070>
+Allow: INVITE, ACK, CANCEL, MESSAGE, NOTIFY, OPTIONS, REFER, UPDATE, PARK
+Supported: replaces, from-change, 100rel
+User-Agent: JavaSIP
+Content-Type: application/sdp
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG main JavaSIP - gov.nist.javax.sip.SipProviderImpl.sendRequest(SipProviderImpl.java:772) [done sending INVITE to hop 85.95.138.7:5060/udp]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 347]
+INFO Thread-4 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-4 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166073222"
+isSender="false" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="SIP/2.0 100 Trying" 
+>
+<![CDATA[SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-4 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166073235"
+isSender="false" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="SIP/2.0 100 Trying" 
+>
+<![CDATA[SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(fce6fd71b1d34182274a42e07816bab7@192.168.1.2) : returning null]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@7de3ed47]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@4f9a3314sipEvent.source = gov.nist.javax.sip.SipProviderImpl@7de3ed47]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-4 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@5226eedd]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@7de3ed47]source = gov.nist.javax.sip.SipProviderImpl@7de3ed47]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@4f9a3314 for SIP/2.0 100 Trying
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 100
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 538]
+INFO Thread-5 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-5 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166073334"
+isSender="false" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-5 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166073338"
+isSender="false" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(fce6fd71b1d34182274a42e07816bab7@192.168.1.2:8z2kduvgq-4ecjcqclhj4xu2tz9q72ys) : returning null]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@7de3ed47]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@4f9a3314sipEvent.source = gov.nist.javax.sip.SipProviderImpl@7de3ed47]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-5 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@5dcdad20]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@7de3ed47]source = gov.nist.javax.sip.SipProviderImpl@7de3ed47]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@4f9a3314 for SIP/2.0 401 Unauthorized
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 401
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 538]
+INFO Thread-6 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-6 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166073839"
+isSender="false" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-6 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166073840"
+isSender="false" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(fce6fd71b1d34182274a42e07816bab7@192.168.1.2:8z2kduvgq-4ecjcqclhj4xu2tz9q72ys) : returning null]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@7de3ed47]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@4f9a3314sipEvent.source = gov.nist.javax.sip.SipProviderImpl@7de3ed47]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-6 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@c252a27]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@7de3ed47]source = gov.nist.javax.sip.SipProviderImpl@7de3ed47]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@4f9a3314 for SIP/2.0 401 Unauthorized
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 401
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 538]
+INFO Thread-7 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-7 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166074840"
+isSender="false" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-7 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166074841"
+isSender="false" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(fce6fd71b1d34182274a42e07816bab7@192.168.1.2:8z2kduvgq-4ecjcqclhj4xu2tz9q72ys) : returning null]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@7de3ed47]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@4f9a3314sipEvent.source = gov.nist.javax.sip.SipProviderImpl@7de3ed47]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-7 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@405b469c]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@7de3ed47]source = gov.nist.javax.sip.SipProviderImpl@7de3ed47]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@4f9a3314 for SIP/2.0 401 Unauthorized
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 401
+DEBUG Thread-8 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 538]
+INFO Thread-8 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-8 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166076842"
+isSender="false" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-8 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166076843"
+isSender="false" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-8 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838]
+DEBUG Thread-8 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-8 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-8 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(fce6fd71b1d34182274a42e07816bab7@192.168.1.2:8z2kduvgq-4ecjcqclhj4xu2tz9q72ys) : returning null]
+DEBUG Thread-8 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-8 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-8 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-8 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@7de3ed47]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@4f9a3314sipEvent.source = gov.nist.javax.sip.SipProviderImpl@7de3ed47]
+DEBUG Thread-8 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-8 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-8 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@281f183f]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@7de3ed47]source = gov.nist.javax.sip.SipProviderImpl@7de3ed47]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@4f9a3314 for SIP/2.0 401 Unauthorized
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 401
+DEBUG Thread-9 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 538]
+INFO Thread-9 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-9 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166080841"
+isSender="false" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-9 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166080842"
+isSender="false" 
+transactionId="fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838" 
+callId="fce6fd71b1d34182274a42e07816bab7@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-9 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838]
+DEBUG Thread-9 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-9 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-9 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(fce6fd71b1d34182274a42e07816bab7@192.168.1.2:8z2kduvgq-4ecjcqclhj4xu2tz9q72ys) : returning null]
+DEBUG Thread-9 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-9 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-9 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=fce6fd71b1d34182274a42e07816bab7-192.168.1.2-1-invite-192.168.1.2-5070353838
+Call-ID: fce6fd71b1d34182274a42e07816bab7@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=8z2kduVgQ-4ECjcqclHj4xu2Tz9q72YS
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="c2bd7ef1c44339e0cfa38c54ae6344d6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-9 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@7de3ed47]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@4f9a3314sipEvent.source = gov.nist.javax.sip.SipProviderImpl@7de3ed47]
+DEBUG Thread-9 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-9 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-9 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@5fdcc4cd]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@7de3ed47]source = gov.nist.javax.sip.SipProviderImpl@7de3ed47]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@4f9a3314 for SIP/2.0 401 Unauthorized
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 401
+DEBUG main JavaSIP - BUILD TIMESTAMP = null
+DEBUG main JavaSIP - Config Propeties = {}{gov.nist.javax.sip.SERVER_LOG=java-sip.txt, gov.nist.javax.sip.TRACE_LEVEL=32, javax.sip.STACK_NAME=JavaSIP, gov.nist.javax.sip.DEBUG_LOG=java-sip-debug.log}
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:236) [Here are the stack configuration properties 
+{}{gov.nist.javax.sip.SERVER_LOG=java-sip.txt, gov.nist.javax.sip.TRACE_LEVEL=32, javax.sip.STACK_NAME=JavaSIP, gov.nist.javax.sip.DEBUG_LOG=java-sip-debug.log}
+]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:238) [ ]]>]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:239) [</debug>]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:240) [<description
+ logDescription="JavaSIP"
+ name="null" />
+]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:242) [<debug>]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:243) [<![CDATA[ ]
+INFO main JavaSIP - value -1000 will be used for reliableConnectionKeepAliveTimeout stack property
+INFO main JavaSIP - Setting Stack Thread priority to 10
+WARN main JavaSIP - using default tls security policy
+WARN main JavaSIP - Using default keystore type pkcs12
+WARN main JavaSIP - TLS server settings will be inactive - TLS key store will use JVM defaults keyStoreType=pkcs12 javax.net.ssl.keyStore=null javax.net.ssl.keyStorePassword=null
+INFO main JavaSIP - javax.net.ssl.trustStorePassword is null, using the password passed through javax.net.ssl.keyStorePassword
+WARN main JavaSIP - Using default truststore type pkcs12
+WARN main JavaSIP - TLS trust settings will be inactive - TLS trust store will use JVM defaults. trustStoreType=pkcs12 javax.net.ssl.trustStore=null javax.net.ssl.trustStorePassword=null
+DEBUG main JavaSIP - gov.nist.core.net.DefaultSecurityManagerProvider.init(DefaultSecurityManagerProvider.java:82) [SecurityManagerProvider gov.nist.core.net.DefaultSecurityManagerProvider will use algorithm SunX509]
+DEBUG main JavaSIP - gov.nist.core.net.DefaultSecurityManagerProvider.init(DefaultSecurityManagerProvider.java:105) [TLS settings OK. SecurityManagerProvider gov.nist.core.net.DefaultSecurityManagerProvider initialized.]
+DEBUG main JavaSIP - gov.nist.javax.sip.SipStackImpl.<init>(SipStackImpl.java:1431) [created Sip stack. Properties = {}{gov.nist.javax.sip.SERVER_LOG=java-sip.txt, gov.nist.javax.sip.TRACE_LEVEL=32, javax.sip.STACK_NAME=JavaSIP, gov.nist.javax.sip.DEBUG_LOG=java-sip-debug.log}]
+INFO main JavaSIP - the sip stack timer gov.nist.javax.sip.stack.timers.DefaultSipTimer has been started
+DEBUG main JavaSIP - gov.nist.javax.sip.SipStackImpl.createListeningPoint(SipStackImpl.java:1621) [createListeningPoint : address = 192.168.1.2 port = 5070 transport = udp]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.UDPMessageProcessor.<init>(UDPMessageProcessor.java:132) [Max Message size is 65536]
+DEBUG main JavaSIP - gov.nist.javax.sip.SipStackImpl.createListeningPoint(SipStackImpl.java:1659) [Created Message Processor: 192.168.1.2 port = 5070 transport = udp]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.MessageProcessor.setListeningPoint(MessageProcessor.java:203) [setListeningPointgov.nist.javax.sip.stack.UDPMessageProcessor@ba8d91c listeningPoint = gov.nist.javax.sip.ListeningPointImpl@7364985f]
+DEBUG main JavaSIP - gov.nist.javax.sip.SipStackImpl.createSipProvider(SipStackImpl.java:1691) [createSipProvider: gov.nist.javax.sip.ListeningPointImpl@7364985f]
+DEBUG main JavaSIP - gov.nist.javax.sip.SipProviderImpl.addSipListener(SipProviderImpl.java:226) [add SipListener ru.ptkom.sip.SipCaller@4d49af10]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.DefaultRouter.getNextHop(DefaultRouter.java:244) [Used request-URI for nextHop = 85.95.138.7:5060/udp]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.<init>(UDPMessageChannel.java:264) [Creating message channel 85.95.138.7/5060]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.sendMessage(UDPMessageChannel.java:829) [sendMessage 85.95.138.7/5060
+messageSize =  590 message = INVITE sip:228@85.95.138.7:5060;transport=udp SIP/2.0
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+CSeq: 1 INVITE
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Max-Forwards: 70
+Contact: "BARGUZIN" <sip:173@192.168.1.2:5070>
+Allow: INVITE, ACK, CANCEL, MESSAGE, NOTIFY, OPTIONS, REFER, UPDATE, PARK
+Supported: replaces, from-change, 100rel
+User-Agent: JavaSIP
+Content-Type: application/sdp
+Content-Length: 0
+
+]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.sendMessage(UDPMessageChannel.java:833) [*******************
+]
+INFO main JavaSIP - <message
+from="192.168.1.2:5070" 
+to="85.95.138.7:5060" 
+time="1694166108446"
+isSender="true" 
+transactionId="52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931" 
+callId="52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2" 
+firstLine="INVITE sip:228@85.95.138.7:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[INVITE sip:228@85.95.138.7:5060;transport=udp SIP/2.0
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+CSeq: 1 INVITE
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Max-Forwards: 70
+Contact: "BARGUZIN" <sip:173@192.168.1.2:5070>
+Allow: INVITE, ACK, CANCEL, MESSAGE, NOTIFY, OPTIONS, REFER, UPDATE, PARK
+Supported: replaces, from-change, 100rel
+User-Agent: JavaSIP
+Content-Type: application/sdp
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG main JavaSIP - gov.nist.javax.sip.SipProviderImpl.sendRequest(SipProviderImpl.java:772) [done sending INVITE to hop 85.95.138.7:5060/udp]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 347]
+INFO Thread-4 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-4 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166108453"
+isSender="false" 
+transactionId="52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931" 
+callId="52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2" 
+firstLine="SIP/2.0 100 Trying" 
+>
+<![CDATA[SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-4 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166108466"
+isSender="false" 
+transactionId="52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931" 
+callId="52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2" 
+firstLine="SIP/2.0 100 Trying" 
+>
+<![CDATA[SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key 52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2) : returning null]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@4d49af10sipEvent.source = gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-4 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@313ec1fa]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]source = gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@4d49af10 for SIP/2.0 100 Trying
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 100
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 538]
+INFO Thread-5 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-5 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166108562"
+isSender="false" 
+transactionId="52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931" 
+callId="52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-5 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166108566"
+isSender="false" 
+transactionId="52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931" 
+callId="52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key 52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2:ftogvbqdsczz84yhu2hgi8vpkuzd-vdb) : returning null]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@4d49af10sipEvent.source = gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-5 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@187f5652]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]source = gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@4d49af10 for SIP/2.0 401 Unauthorized
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 401
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 538]
+INFO Thread-6 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-6 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166109069"
+isSender="false" 
+transactionId="52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931" 
+callId="52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-6 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166109070"
+isSender="false" 
+transactionId="52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931" 
+callId="52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key 52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2:ftogvbqdsczz84yhu2hgi8vpkuzd-vdb) : returning null]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@4d49af10sipEvent.source = gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-6 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@27c9f293]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]source = gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@4d49af10 for SIP/2.0 401 Unauthorized
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 401
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 538]
+INFO Thread-7 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-7 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166110074"
+isSender="false" 
+transactionId="52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931" 
+callId="52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-7 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166110075"
+isSender="false" 
+transactionId="52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931" 
+callId="52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key 52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2:ftogvbqdsczz84yhu2hgi8vpkuzd-vdb) : returning null]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=52ffc1550bdb7b08311d594958e6c5a5-192.168.1.2-1-invite-192.168.1.2-5070353931
+Call-ID: 52ffc1550bdb7b08311d594958e6c5a5@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=ftOgvbQDscZZ84yhu2hgI8vpkuZD-vDB
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="a63e144f82c6e03d888a8f2a677e5c68",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@4d49af10sipEvent.source = gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-7 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@2b790ddc]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]source = gov.nist.javax.sip.SipProviderImpl@2a7bd5f2]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@4d49af10 for SIP/2.0 401 Unauthorized
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 401
+DEBUG main JavaSIP - BUILD TIMESTAMP = null
+DEBUG main JavaSIP - Config Propeties = {}{gov.nist.javax.sip.SERVER_LOG=java-sip.txt, gov.nist.javax.sip.TRACE_LEVEL=32, javax.sip.STACK_NAME=JavaSIP, gov.nist.javax.sip.DEBUG_LOG=java-sip-debug.log}
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:236) [Here are the stack configuration properties 
+{}{gov.nist.javax.sip.SERVER_LOG=java-sip.txt, gov.nist.javax.sip.TRACE_LEVEL=32, javax.sip.STACK_NAME=JavaSIP, gov.nist.javax.sip.DEBUG_LOG=java-sip-debug.log}
+]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:238) [ ]]>]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:239) [</debug>]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:240) [<description
+ logDescription="JavaSIP"
+ name="null" />
+]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:242) [<debug>]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:243) [<![CDATA[ ]
+INFO main JavaSIP - value -1000 will be used for reliableConnectionKeepAliveTimeout stack property
+INFO main JavaSIP - Setting Stack Thread priority to 10
+WARN main JavaSIP - using default tls security policy
+WARN main JavaSIP - Using default keystore type pkcs12
+WARN main JavaSIP - TLS server settings will be inactive - TLS key store will use JVM defaults keyStoreType=pkcs12 javax.net.ssl.keyStore=null javax.net.ssl.keyStorePassword=null
+INFO main JavaSIP - javax.net.ssl.trustStorePassword is null, using the password passed through javax.net.ssl.keyStorePassword
+WARN main JavaSIP - Using default truststore type pkcs12
+WARN main JavaSIP - TLS trust settings will be inactive - TLS trust store will use JVM defaults. trustStoreType=pkcs12 javax.net.ssl.trustStore=null javax.net.ssl.trustStorePassword=null
+DEBUG main JavaSIP - gov.nist.core.net.DefaultSecurityManagerProvider.init(DefaultSecurityManagerProvider.java:82) [SecurityManagerProvider gov.nist.core.net.DefaultSecurityManagerProvider will use algorithm SunX509]
+DEBUG main JavaSIP - gov.nist.core.net.DefaultSecurityManagerProvider.init(DefaultSecurityManagerProvider.java:105) [TLS settings OK. SecurityManagerProvider gov.nist.core.net.DefaultSecurityManagerProvider initialized.]
+DEBUG main JavaSIP - gov.nist.javax.sip.SipStackImpl.<init>(SipStackImpl.java:1431) [created Sip stack. Properties = {}{gov.nist.javax.sip.SERVER_LOG=java-sip.txt, gov.nist.javax.sip.TRACE_LEVEL=32, javax.sip.STACK_NAME=JavaSIP, gov.nist.javax.sip.DEBUG_LOG=java-sip-debug.log}]
+INFO main JavaSIP - the sip stack timer gov.nist.javax.sip.stack.timers.DefaultSipTimer has been started
+DEBUG main JavaSIP - gov.nist.javax.sip.SipStackImpl.createListeningPoint(SipStackImpl.java:1621) [createListeningPoint : address = 192.168.1.2 port = 5070 transport = udp]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.UDPMessageProcessor.<init>(UDPMessageProcessor.java:132) [Max Message size is 65536]
+DEBUG main JavaSIP - gov.nist.javax.sip.SipStackImpl.createListeningPoint(SipStackImpl.java:1659) [Created Message Processor: 192.168.1.2 port = 5070 transport = udp]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.MessageProcessor.setListeningPoint(MessageProcessor.java:203) [setListeningPointgov.nist.javax.sip.stack.UDPMessageProcessor@4461c7e3 listeningPoint = gov.nist.javax.sip.ListeningPointImpl@351d0846]
+DEBUG main JavaSIP - gov.nist.javax.sip.SipStackImpl.createSipProvider(SipStackImpl.java:1691) [createSipProvider: gov.nist.javax.sip.ListeningPointImpl@351d0846]
+DEBUG main JavaSIP - gov.nist.javax.sip.SipProviderImpl.addSipListener(SipProviderImpl.java:226) [add SipListener ru.ptkom.sip.SipCaller@564718df]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.DefaultRouter.getNextHop(DefaultRouter.java:244) [Used request-URI for nextHop = 85.95.138.7:5060/udp]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.<init>(UDPMessageChannel.java:264) [Creating message channel 85.95.138.7/5060]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.sendMessage(UDPMessageChannel.java:829) [sendMessage 85.95.138.7/5060
+messageSize =  590 message = INVITE sip:228@85.95.138.7:5060;transport=udp SIP/2.0
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+CSeq: 1 INVITE
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Max-Forwards: 70
+Contact: "BARGUZIN" <sip:173@192.168.1.2:5070>
+Allow: INVITE, ACK, CANCEL, MESSAGE, NOTIFY, OPTIONS, REFER, UPDATE, PARK
+Supported: replaces, from-change, 100rel
+User-Agent: JavaSIP
+Content-Type: application/sdp
+Content-Length: 0
+
+]
+DEBUG main JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.sendMessage(UDPMessageChannel.java:833) [*******************
+]
+INFO main JavaSIP - <message
+from="192.168.1.2:5070" 
+to="85.95.138.7:5060" 
+time="1694166154338"
+isSender="true" 
+transactionId="efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438" 
+callId="efcc2af4008e483792be39063febf69d@192.168.1.2" 
+firstLine="INVITE sip:228@85.95.138.7:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[INVITE sip:228@85.95.138.7:5060;transport=udp SIP/2.0
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+CSeq: 1 INVITE
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Max-Forwards: 70
+Contact: "BARGUZIN" <sip:173@192.168.1.2:5070>
+Allow: INVITE, ACK, CANCEL, MESSAGE, NOTIFY, OPTIONS, REFER, UPDATE, PARK
+Supported: replaces, from-change, 100rel
+User-Agent: JavaSIP
+Content-Type: application/sdp
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG main JavaSIP - gov.nist.javax.sip.SipProviderImpl.sendRequest(SipProviderImpl.java:772) [done sending INVITE to hop 85.95.138.7:5060/udp]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 347]
+INFO Thread-4 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-4 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166154347"
+isSender="false" 
+transactionId="efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438" 
+callId="efcc2af4008e483792be39063febf69d@192.168.1.2" 
+firstLine="SIP/2.0 100 Trying" 
+>
+<![CDATA[SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-4 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166154359"
+isSender="false" 
+transactionId="efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438" 
+callId="efcc2af4008e483792be39063febf69d@192.168.1.2" 
+firstLine="SIP/2.0 100 Trying" 
+>
+<![CDATA[SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(efcc2af4008e483792be39063febf69d@192.168.1.2) : returning null]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>
+CSeq: 1 INVITE
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2d442b87]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@564718dfsipEvent.source = gov.nist.javax.sip.SipProviderImpl@2d442b87]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-4 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-4 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@1d27e400]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2d442b87]source = gov.nist.javax.sip.SipProviderImpl@2d442b87]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@564718df for SIP/2.0 100 Trying
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 100
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 538]
+INFO Thread-5 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-5 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166154453"
+isSender="false" 
+transactionId="efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438" 
+callId="efcc2af4008e483792be39063febf69d@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-5 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166154457"
+isSender="false" 
+transactionId="efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438" 
+callId="efcc2af4008e483792be39063febf69d@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(efcc2af4008e483792be39063febf69d@192.168.1.2:kon3ezfffvzmde1qu39s7zqyyrpkxve.) : returning null]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2d442b87]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@564718dfsipEvent.source = gov.nist.javax.sip.SipProviderImpl@2d442b87]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-5 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-5 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@60667a5b]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2d442b87]source = gov.nist.javax.sip.SipProviderImpl@2d442b87]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@564718df for SIP/2.0 401 Unauthorized
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 401
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 538]
+INFO Thread-6 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-6 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166154954"
+isSender="false" 
+transactionId="efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438" 
+callId="efcc2af4008e483792be39063febf69d@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-6 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166154955"
+isSender="false" 
+transactionId="efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438" 
+callId="efcc2af4008e483792be39063febf69d@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(efcc2af4008e483792be39063febf69d@192.168.1.2:kon3ezfffvzmde1qu39s7zqyyrpkxve.) : returning null]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2d442b87]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@564718dfsipEvent.source = gov.nist.javax.sip.SipProviderImpl@2d442b87]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-6 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-6 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@45c004e]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2d442b87]source = gov.nist.javax.sip.SipProviderImpl@2d442b87]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@564718df for SIP/2.0 401 Unauthorized
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 401
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.stack.UDPMessageChannel.processIncomingDataPacket(UDPMessageChannel.java:355) [UDPMessageChannel: processIncomingDataPacket : peerAddress = 85.95.138.7/5060 Length = 538]
+INFO Thread-7 JavaSIP - Setting SIPMessage peerPacketSource to: /85.95.138.7:5060
+INFO Thread-7 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166155953"
+isSender="false" 
+transactionId="efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438" 
+callId="efcc2af4008e483792be39063febf69d@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+INFO Thread-7 JavaSIP - <message
+from="85.95.138.7:5060" 
+to="192.168.1.2:5070" 
+time="1694166155955"
+isSender="false" 
+transactionId="efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438" 
+callId="efcc2af4008e483792be39063febf69d@192.168.1.2" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]]>
+</message>
+
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1270) [clientTx: looking for key efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.findTransaction(SIPTransactionStack.java:1297) [findTransaction: returning  : null]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.NistSipMessageFactoryImpl.newSIPServerResponse(NistSipMessageFactoryImpl.java:106) [Found Transaction null for SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.stack.SIPTransactionStack.getDialog(SIPTransactionStack.java:1022) [getDialog(efcc2af4008e483792be39063febf69d@192.168.1.2:kon3ezfffvzmde1qu39s7zqyyrpkxve.) : returning null]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1549) [PROCESSING INCOMING RESPONSE: SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1602) [Transaction = null sipDialog = null]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.DialogFilter.processResponse(DialogFilter.java:1739) [sending response SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.2:5070;rport=5070;received=192.168.1.2;branch=efcc2af4008e483792be39063febf69d-192.168.1.2-1-invite-192.168.1.2-5070383438
+Call-ID: efcc2af4008e483792be39063febf69d@192.168.1.2
+From: "BARGUZIN" <sip:173@192.168.1.2:5070>
+To: "228" <sip:228@85.95.138.7:5060>;tag=Kon3EzFffvzMdE1Qu39s7zqyYRpkxvE.
+CSeq: 1 INVITE
+WWW-Authenticate: Digest realm="voip.ptk.loc",nonce="4ccd4d36a67947096b674eaa2f0b52c6",algorithm=MD5,qop="auth"
+User-Agent: Eltex SBC v1.10.5.599
+Content-Length: 0
+
+ to TU for processing ]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:163) [handleEvent gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2d442b87]currentTransaction = nullthis.sipListener = ru.ptkom.sip.SipCaller@564718dfsipEvent.source = gov.nist.javax.sip.SipProviderImpl@2d442b87]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.SipProviderImpl.handleEvent(SipProviderImpl.java:173) [Dialog = null]
+DEBUG Thread-7 JavaSIP - [LogWriter.java:92][CommonLogger.java:116][SipProviderImpl.java:175][DialogFilter.java:1771][UDPMessageChannel.java:632][UDPMessageChannel.java:527][UDPMessageChannel.java:325][Thread.java:831]
+DEBUG Thread-7 JavaSIP - gov.nist.javax.sip.EventScanner.addEvent(EventScanner.java:102) [addEvent gov.nist.javax.sip.EventWrapper@6705c242]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverEvent(EventScanner.java:134) [sipEvent = gov.nist.javax.sip.ResponseEventExt[source=gov.nist.javax.sip.SipProviderImpl@2d442b87]source = gov.nist.javax.sip.SipProviderImpl@2d442b87]
+DEBUG EventScannerThread JavaSIP - gov.nist.javax.sip.EventScanner.deliverResponseEvent(EventScanner.java:308) [Calling listener ru.ptkom.sip.SipCaller@564718df for SIP/2.0 401 Unauthorized
+]
+INFO EventScannerThread ru.ptkom.sip.SipCaller - 401
