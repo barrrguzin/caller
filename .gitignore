@@ -1,7 +1,13 @@
 log
 target
 .idea
+
 .log
 .txt
 .properties
 .xml
+
+*.log
+*.txt
+*.properties
+*.xml
